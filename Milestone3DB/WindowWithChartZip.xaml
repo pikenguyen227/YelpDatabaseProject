@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milestone3DB"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Class="Milestone3DB.WindowWithChartZip"
+        mc:Ignorable="d"
+        Title="WindowWithChartZip" Height="557.511" Width="735.193">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="507" Margin="10,10,0,0" VerticalAlignment="Top" Width="707">
+
+            <ScrollViewer HorizontalAlignment="Left" Height="406" Margin="10,10,0,0" VerticalAlignment="Top" Width="701">
+                <chartingToolkit:Chart Name="zipCodeChart" Title="Number of Businesses per Zipcode">
+                    <chartingToolkit:Chart.DataContext>
+                        <PointCollection>1,10 2,20</PointCollection>
+                    </chartingToolkit:Chart.DataContext>
+                    <chartingToolkit:ColumnSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Title="# of Businesses" />
+
+                </chartingToolkit:Chart>
+            </ScrollViewer>
+
+        </ScrollViewer>
+
+    </Grid>
+</Window>

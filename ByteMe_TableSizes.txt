@@ -1,0 +1,16 @@
+--SELECT COUNT(*) FROM yelp_business_entity
+--SELECT COUNT(*) FROM yelp_user_entity
+--SELECT COUNT(*) FROM categories_entity
+--SELECT COUNT(*) FROM (SELECT DISTINCT categories FROM categories_entity) a
+--SELECT COUNT(*) FROM attributes_entity
+--SELECT COUNT(*) FROM (SELECT * FROM isfriend_relationship ORDER BY user_id_one) a
+--SELECT COUNT(*) FROM checkin_entity
+
+yelp_business_entity: 11,481
+yelp_user_entity: 192,999
+review_entity: 416,479
+business_category: 33,619
+business(distinct)_category: 226
+business_attribue: 227,536
+friends: 1,052,706
+checkins: 67,407

@@ -1,0 +1,7 @@
+--SELECT COUNT(*) FROM yelp_business_entity
+--SELECT COUNT(*) FROM yelp_user_entity
+--SELECT COUNT(*) FROM categories_entity
+--SELECT COUNT(*) FROM (SELECT DISTINCT categories FROM categories_entity) a
+--SELECT COUNT(*) FROM attributes_entity
+--SELECT COUNT(*) FROM (SELECT * FROM isfriend_relationship ORDER BY user_id_one) a
+--SELECT COUNT(*) FROM checkin_entity
